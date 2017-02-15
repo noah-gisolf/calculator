@@ -1,0 +1,63 @@
+* {
+	  background-color: #012;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: bold 30px impact, sans-serif;
+  color: black;
+  line-height: 80px;
+  text-align: center;
+}
+
+#calc {
+  width: 650px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px 20px 10px;
+  background: #012;
+  border-radius: 5px;
+}
+
+.button, .dinges1 {
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.dinges1 {
+  height: 100px;
+}
+
+.screen {
+  margin: 0 95px 0 132px;
+  height: 80px;
+  background: white;
+  border-radius: 5px;
+}
+
+.button span {
+  float: left;
+  position: relative;
+  top: 0;
+  width: 123px;
+  height: 80px;
+  cursor: pointer;
+  background: white;
+  border-radius: 10px;
+  margin: 0 7px 11px 0;
+}
+
+.dinges1 span.reset {
+  float: left;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  width: 123px;
+  height: 80px;
+  background: white;
+  border-radius: 10px;
+  margin: 0 70px 15px 0;
+}
+
+span.operator {
+  margin-right: 0;
+}

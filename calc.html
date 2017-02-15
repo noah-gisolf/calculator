@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <script type="text/javascript" src="calc.js"></script> 
-            <link rel="stylesheet" href="style.css" />
-        </head>
-        <body>
-        <form class="calcForm" name="calculator">
-            <input type="text" class="calcDisplay" id="display" />
-            <div class="calcRow">
-                <input type="button" class="calcButton" value="7" onclick="numInput('7')" />
-                <input type="button" class="calcButton" value="8" onclick="numInput('8')" />
-                <input type="button" class="calcButton" value="9" onclick="numInput('9')" />
-                <input type="button" class="calcButton" value="+" onclick="setOperation('add')" />
-            </div>
-            <div class="calcRow">
-                <input type="button" class="calcButton" value="4" onclick="numInput('4')" />
-                <input type="button" class="calcButton" value="5" onclick="numInput('5')" />
-                <input type="button" class="calcButton" value="6" onclick="numInput('6')" />
-                <input type="button" class="calcButton" value="-" onclick="setOperation('subtract')" />
-            </div>
-            <div class="calcRow">
-                <input type="button" class="calcButton" value="1" onclick="numInput('1')" />
-                <input type="button" class="calcButton" value="2" onclick="numInput('2')" />
-                <input type="button" class="calcButton" value="3" onclick="numInput('3')" />
-                <input type="button" class="calcButton" value="*" onclick="setOperation('multiply')" />
-            </div>
-            <div class="calcRow">
-                <input type="button" class="calcButton" value="0" onclick="numInput('0')" />
-                <input type="button" class="calcButton" value="." onclick="insertDecimal('.')" />
-                <input type="button" class="calcButton" value="C" onclick="clearDisplay()" />
-                <input type="button" class="calcButton" value="=" onclick="calculate()" />
-            </div>
-        </form>
-    </body>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Rekenmachine</title>
+ <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+
+  <script type="text/javascript" src="calc.js"></script>
+
+    <div id="calc">
+      <div class="dinges1">
+        <span class="reset" onclick="javascript:reset();">C</span>
+          <div class="screen"></div>
+  </div>
+
+  <div class="button">
+    <span onclick="javascript:addNumber(7);">7</span>
+    <span onclick="javascript:addNumber(8);">8</span>
+    <span onclick="javascript:addNumber(9);">9</span>
+
+    <span class="operator" onclick="javascript:addOperator('+');">+</span>
+
+    <span onclick="javascript:addNumber(4);">4</span>
+    <span onclick="javascript:addNumber(5);">5</span>
+    <span onclick="javascript:addNumber(6);">6</span>
+
+    <span class="operator" onclick="javascript:addOperator('-');">-</span>
+
+    <span onclick="javascript:addNumber(1);">1</span>
+    <span onclick="javascript:addNumber(2);">2</span>
+    <span onclick="javascript:addNumber(3);">3</span>
+
+    <span class="operator" onclick="javascript:addOperator('/');">/</span>
+
+    <span onclick="javascript:addNumber(0);">0</span>
+    <span onclick="javascript:addNumber('.')">.</span>
+
+    <span class="eval" onclick="javascript:calculate();">=</span>
+
+    <span class="operator" onclick="javascript:addOperator('*');">x</span>
+
+  </div>
+    </div>
+</body>
 </html>
